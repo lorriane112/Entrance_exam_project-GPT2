@@ -2,7 +2,7 @@
 import json
 import os
 
-def txt_to_json_by_lines(txt_file, json_file):
+def txt_2_json(txt_file, json_file):
     """将TXT文件的每一行转换为JSON的一个条目"""
     
     print(f"正在转换: {txt_file} -> {json_file}")
@@ -39,4 +39,4 @@ def txt_to_json_by_lines(txt_file, json_file):
             print(f"  {json_data[i]['text'][:50]}...")
 
 if __name__ == "__main__":
-    txt_to_json_by_lines('input.txt', 'input.json')
+    txt_2_json('input.txt', 'input.json')
